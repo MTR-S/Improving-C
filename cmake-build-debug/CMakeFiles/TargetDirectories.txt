@@ -1,0 +1,3 @@
+C:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug/CMakeFiles/Estudando_Ponteiros.dir
+C:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug/CMakeFiles/rebuild_cache.dir
