@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <locale.h>
 
+typedef struct lista {
+    int valor;
+    struct lista *proxima_lista;
+}listas;
+
 void lista_encadeada();
+listas *busca_valor_lista(listas *aponta_lista, int valor);
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
@@ -72,18 +78,30 @@ int main() {
 
     lista_encadeada();
 
+    printf("\n=> Um outro exemplo do uso de Estruturas e Ponteiros em listas concatenadas eh na busca de valores:\n");
 
+    //listas *busca_valora_lista(listas *aponta_lista, int valor);
+    listas l1, l2, l3;
+    listas *gancho, *resultado;
+
+    l1.valor = 10;
+    l2.valor = 20;
+    l3.valor = 30;
+    l1.proxima_lista = &l2;
+    l2.proxima_lista = &l3;
+    l3.proxima_lista = NULL;
+    gancho = &l1;
+
+    resultado = busca_valor_lista(gancho, 10);
+
+    if(resultado == NULL) {printf("* Valor nao encontrado! *\n");}
+    else {printf("* Valor %d encontrado! *\n", resultado->valor);}
 
     return 0;
 }
 
 
 void lista_encadeada() {
-    typedef struct lista {
-        int valor;
-        struct lista *proxima_lista;
-    }listas;
-
     listas l1, l2, l3, *gancho;
 
     l1.valor = 1;
@@ -107,4 +125,12 @@ void lista_encadeada() {
         i++;
     }
     printf("---------FIM da lista!---------\n");
+}
+
+listas *busca_valor_lista(listas *aponta_lista, int valor) {
+    while(aponta_lista != NULL) {
+        if(aponta_lista->valor == valor) {return aponta_lista;}
+        else {aponta_lista = aponta_lista->proxima_lista;}
+    }
+    return NULL;
 }
