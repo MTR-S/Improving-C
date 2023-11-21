@@ -49,6 +49,23 @@ int main() {
            " %d segundos\n", aponta_struct_tempo->hora, aponta_struct_tempo->minuto, aponta_struct_tempo->segundo);
 
 
+    printf("\n=> E possível criar ponteiros dentro de Structs\n");
+    struct data {
+        int *aponta_dia;
+        int *aponta_mes;
+        int *aponta_ano;
+    };
+
+    struct data hoje;
+    int dia = 14, mes = 1, ano = 2005;
+
+    hoje.aponta_dia = &dia;
+    hoje.aponta_mes = &mes;
+    hoje.aponta_ano = &ano;
+
+    printf("Usando apenas ponteiros podemos nos referenciar a data: %02d/%02d/%04d\n", *hoje.aponta_dia, *hoje.aponta_mes, *hoje.aponta_ano);
+
+
 
 
     return 0;
