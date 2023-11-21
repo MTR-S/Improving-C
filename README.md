@@ -1,7 +1,8 @@
 # Improving-C 
--> Estudando a **mãe das linguagens!** <img src = "LogoC.png">
+-> Estudando a **mãe das linguagens!** 
 - Estruturas;
 - Ponteiros;
 - Arquivos;
 
+<img src = "LogoC.png">
 
