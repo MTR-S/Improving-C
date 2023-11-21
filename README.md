@@ -1,5 +1,5 @@
 # Improving-C 
--> Estudando a **mãe das linguagens!** 
+-> Estudando a **Mãe das Linguagens!** 
 - Estruturas;
 - Ponteiros;
 - Arquivos;
