@@ -97,6 +97,16 @@ int main() {
     if(resultado == NULL) {printf("* Valor nao encontrado! *\n");}
     else {printf("* Valor %d encontrado! *\n", resultado->valor);}
 
+
+    printf("\n=> Ao referenciar a um vetor usando ponteiros o uso se diferencia dos outros tipos!\n");
+
+    int vetor_exemplo[3] = {1, 2, 3};
+    int *aponta_vetor_exemplo = vetor_exemplo;
+
+    printf("Ao passarmos o valor \"vetor\" para o ponteiro ele ira receber exatamente o endereco da memoria"
+           "exata do primeiro membro dovetor apontado\n");
+    printf("* Endereco no ponteiro = %p\n* Enderco do primeiro membro do vetor = %p\n", aponta_vetor_exemplo, &vetor_exemplo[0]);
+
     return 0;
 }
 
