@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <locale.h>
 
+void lista_encadeada();
+
 int main() {
     setlocale(LC_ALL, "Portuguese");
 
@@ -42,14 +44,14 @@ int main() {
     aponta_struct_tempo->segundo = 13;
 
     printf("Apos Criarmos a \"Struct Tempo\", definir seus membros e criar variaveis do seu tipo (uma "
-           "\"horario_local\" e outra que ira   apontar para essa variavel), atribuimos valores a esses membros por meio do "
+           "\"horario_local\" e outra que ira  apontar para essa variavel), atribuimos valores a esses membros por meio do "
            "ponteiro \n\n");
     printf("-> Resultado: %d horas %d minutos %d segundos\n", horario_local.hora, horario_local.minuto, horario_local.segundo);
     printf("Lembrando que podemos acessar esses valores usando apenas o ponteiro (\"aponta_struct_tempo->membro\"): %d horas %d minutos"
            " %d segundos\n", aponta_struct_tempo->hora, aponta_struct_tempo->minuto, aponta_struct_tempo->segundo);
 
 
-    printf("\n=> E possível criar ponteiros dentro de Structs\n");
+    printf("\n=> E possível criar ponteiros dentro de Structs!\n");
     struct data {
         int *aponta_dia;
         int *aponta_mes;
@@ -65,8 +67,44 @@ int main() {
 
     printf("Usando apenas ponteiros podemos nos referenciar a data: %02d/%02d/%04d\n", *hoje.aponta_dia, *hoje.aponta_mes, *hoje.aponta_ano);
 
+    printf("\n=> Tendo essas possibilidades da mistura de Estruturas e Ponteiros podemos fazer diversas coisas"
+           "um exemplo bem util eh  uma lista encadeada:\n");
+
+    lista_encadeada();
 
 
 
     return 0;
+}
+
+
+void lista_encadeada() {
+    typedef struct lista {
+        int valor;
+        struct lista *proxima_lista;
+    }listas;
+
+    listas l1, l2, l3, *gancho;
+
+    l1.valor = 1;
+    l2.valor = 2;
+    l3.valor = 3;
+
+    l1.proxima_lista = &l2;
+    l2.proxima_lista = &l3;
+    l3.proxima_lista = NULL;
+
+    gancho = &l1;
+
+    printf("------------------------------\n");
+    int i = 1;
+    while(gancho != NULL) { // tenho uma duvida do porque a condição não é "gancho->proxima_lista != NULL"
+
+        printf(" * Valor do membro de l%d = %d\n", i, gancho->valor);
+
+        gancho = gancho->proxima_lista;
+
+        i++;
+    }
+    printf("---------FIM da lista!---------\n");
 }
