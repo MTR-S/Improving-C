@@ -4,3 +4,4 @@
 - Ponteiros;
 - Arquivos;
 
+<img src = "LogoC.jpg/">
