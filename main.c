@@ -15,6 +15,10 @@ int main() {
     int inteiro1 = 1;
     int *aponta_inteiro1 = &inteiro1;
 
+    printf("\n******************************\n");
+    printf("*       Ponteiros em C      *\n");
+    printf("******************************\n");
+
 
     printf("\n==> Existem diferentes Modos de se usar Ponteiros para exibir uma informacao:\n\n");
     printf("-> Endereco da Memoria da variavel \"int inteiro1\" = %p;\n", &inteiro1);
@@ -106,6 +110,13 @@ int main() {
     printf("Ao passarmos o valor \"vetor\" para o ponteiro ele ira receber exatamente o endereco da memoria"
            "exata do primeiro membro dovetor apontado\n");
     printf("* Endereco no ponteiro = %p\n* Enderco do primeiro membro do vetor = %p\n", aponta_vetor_exemplo, &vetor_exemplo[0]);
+
+    printf("\n=> Por meio da chamada \"Aritimetica de Enderecos\" podemos nos referir a outros membros de"
+           " um mesmo vetor:\n");
+
+    for(int i =0; i < 3; i++) {
+        printf("* Acessando vetor[%d] por meio da Aritimetica de Enderecos: %d *\n", i, *(aponta_vetor_exemplo + i));
+    }
 
     return 0;
 }
