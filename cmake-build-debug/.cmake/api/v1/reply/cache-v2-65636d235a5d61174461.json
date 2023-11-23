@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug"
+			"value" : "c:/Users/Casa/CLionProjects/Improving-C/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -431,7 +431,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Casa/CLionProjects/Improving-C/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -503,7 +503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Casa/CLionProjects/Estudando-Ponteiros"
+			"value" : "C:/Users/Casa/CLionProjects/Improving-C"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1119,7 +1119,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Casa/CLionProjects/Estudando-Ponteiros/cmake-build-debug"
+			"value" : "C:/Users/Casa/CLionProjects/Improving-C/cmake-build-debug"
 		},
 		{
 			"name" : "Estudando_Ponteiros_IS_TOP_LEVEL",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Casa/CLionProjects/Estudando-Ponteiros"
+			"value" : "C:/Users/Casa/CLionProjects/Improving-C"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
