@@ -67,6 +67,12 @@ build CMakeFiles/Estudando_Ponteiros.dir/estruturas.c.obj: C_COMPILER__Estudando
   OBJECT_DIR = CMakeFiles\Estudando_Ponteiros.dir
   OBJECT_FILE_DIR = CMakeFiles\Estudando_Ponteiros.dir
 
+build CMakeFiles/Estudando_Ponteiros.dir/alocacaoDinamica.c.obj: C_COMPILER__Estudando_Ponteiros_unscanned_Debug C$:/Users/Casa/CLionProjects/Improving-C/alocacaoDinamica.c || cmake_object_order_depends_target_Estudando_Ponteiros
+  DEP_FILE = CMakeFiles\Estudando_Ponteiros.dir\alocacaoDinamica.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Estudando_Ponteiros.dir
+  OBJECT_FILE_DIR = CMakeFiles\Estudando_Ponteiros.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Estudando_Ponteiros
@@ -75,7 +81,7 @@ build CMakeFiles/Estudando_Ponteiros.dir/estruturas.c.obj: C_COMPILER__Estudando
 #############################################
 # Link the executable Estudando_Ponteiros.exe
 
-build Estudando_Ponteiros.exe: C_EXECUTABLE_LINKER__Estudando_Ponteiros_Debug CMakeFiles/Estudando_Ponteiros.dir/main.c.obj CMakeFiles/Estudando_Ponteiros.dir/ponteiros.c.obj CMakeFiles/Estudando_Ponteiros.dir/estruturas.c.obj
+build Estudando_Ponteiros.exe: C_EXECUTABLE_LINKER__Estudando_Ponteiros_Debug CMakeFiles/Estudando_Ponteiros.dir/main.c.obj CMakeFiles/Estudando_Ponteiros.dir/ponteiros.c.obj CMakeFiles/Estudando_Ponteiros.dir/estruturas.c.obj CMakeFiles/Estudando_Ponteiros.dir/alocacaoDinamica.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Estudando_Ponteiros.dir

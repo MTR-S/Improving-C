@@ -1,6 +1,6 @@
 #ifndef ESTUDANDO_PONTEIROS_ESTRUTURAS_H
 #define ESTUDANDO_PONTEIROS_ESTRUTURAS_H
 
-
+void iniciand_struct();
 
 #endif

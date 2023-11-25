@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "ponteiros.h"
+#include "estruturas.h"
 
 
 int main() {
@@ -22,4 +23,6 @@ int main() {
     ponteiros_para_vetores();
 
     aritmetica_enderecos();
+
+    iniciand_struct();
 }

@@ -18,9 +18,3 @@ void iniciand_struct() {
            "atraves do \".\" podemos exibir esses valores! *\n");
     printf("-> Membro 1 = %d\n-> Membro 2 = %.2lf\n-> Membro 3 = '%c'\n", ex1.membro1, ex1.membro2, ex1.membro3);
 }
-
-int main(void) {
-    iniciand_struct();
-
-    return 0;
-}

@@ -8,4 +8,6 @@ add_executable(Estudando_Ponteiros main.c
         ponteiros.h
         estruturas.c
         estruturas.h
+        alocacaoDinamica.c
+        alocacaoDinamica.h
 )

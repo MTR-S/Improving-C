@@ -1,6 +1,5 @@
 # ninja log v5
-6	453	7223239533022681	CMakeFiles/Estudando_Ponteiros.dir/main.c.obj	a4fb68c6f443f81e
-453	648	7223239534887694	Estudando_Ponteiros.exe	f26098f8e7838632
-28	717	7224000484850052	CMakeFiles/Estudando_Ponteiros.dir/ponteiros.c.obj	8501339369a44806
 3	959	7224000486685142	CMakeFiles/Estudando_Ponteiros.dir/main.c.obj	121dbf68cab091a
+28	717	7224000484850052	CMakeFiles/Estudando_Ponteiros.dir/ponteiros.c.obj	8501339369a44806
+453	648	7223239534887694	Estudando_Ponteiros.exe	f26098f8e7838632
 22	992	7224000486954425	CMakeFiles/Estudando_Ponteiros.dir/estruturas.c.obj	34997c5be548a46d
